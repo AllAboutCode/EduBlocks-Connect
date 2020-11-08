@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=3.0
+Name=EduBlocks Connect
+Comment=The ultimate toolkit for learning and experimenting with Python.
+Exec=edublocks-connect
+Icon=/usr/share/icons/hicolor/scalable/apps/connectlogo.png
+Terminal=true
+Type=Application
+Categories=Development
+

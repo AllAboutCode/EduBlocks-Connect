@@ -1,0 +1,51 @@
+{
+    "name": "edublocks-ui",
+    "version": "3.0.0",
+    "description": "EduBlocks UI",
+    "scripts": {
+        "clean": "rm -rf build",
+        "build": "tsc && browserify -t brfs -t folderify build/main.js -o dist/main.js",
+        "watch": "parallel watchify tsc-watch",
+        "tsc-watch": "tsc --watch",
+        "watchify": "sleep 5 && watchify -t brfs -t folderify build/main.js -o dist/main.js",
+        "lint": "tslint src/**/*.ts"
+    },
+    "repository": "https://github.com/AllAboutCode/EduBlocks",
+    "keywords": [
+        "quick",
+        "start",
+        "tutorial",
+        "demo"
+    ],
+    "author": "AllAboutCode",
+    "license": "GitHub",
+    "devDependencies": {
+        "brfs": "^2.0.2",
+        "browserify": "^16.5.0",
+        "folderify": "^1.2.1",
+        "npm-parallel": "^2.0.1",
+        "tslint": "^5.3.2",
+        "typescript": "^3.2.2",
+        "watchify": "^3.11.1"
+    },
+    "dependencies": {
+        "@types/change-case": "^2.3.1",
+        "@types/jquery": "^3.3.35",
+        "@types/es6-promise": "0.0.32",
+        "@types/file-saver": "^0.0.1",
+        "@types/lodash": "^4.14.62",
+        "@types/node": "^7.0.12",
+        "@types/w3c-web-usb": "^1.0.3",
+        "change-case": "^3.0.1",
+        "file-saver": "^1.3.3",
+        "firebase": "^7.2.2",
+        "firebaseui": "^4.2.0",
+        "lodash": "^4.17.4",
+        "preact": "^8.4.2",
+        "jquery": "3.5.0",
+        "term.js": "^0.0.7",
+        "js-cookie": "2.2.1",
+        "pxt-blockly": "2.1.14",
+        "copy-text-to-clipboard": "2.2.0"
+    }
+}

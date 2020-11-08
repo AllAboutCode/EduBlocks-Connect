@@ -1,0 +1,1 @@
+This folder is only for scripts that are eventually installed to the target.
